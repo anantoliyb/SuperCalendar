@@ -7,31 +7,18 @@ import java.util.Date;
  */
 public class Week {
 
-    public Date getFirstDaeOfMonth() {
+    private WeekDay weekDay;
+
+    public Calendar getFirstDaeOfMonth() {
         return firstDaeOfMonth;
     }
 
-    private Date firstDaeOfMonth;
-    public Week(Date firstDaeOfMonth){
-        this.firstDaeOfMonth = firstDaeOfMonth;
+    private Calendar firstDaeOfMonth;
 
-        System.out.println(initCalendar());
+    public Week(){
+        Date date = new Date();
+
     }
 
-    ArrayList<WorkDay> list = new ArrayList<WorkDay>();
-
-    public Calendar initCalendar(){
-        int year = getFirstDaeOfMonth().getYear();
-        int month = getFirstDaeOfMonth().getMonth();
-        Calendar calendar = Calendar.getInstance();
-        System.out.println();
-        calendar.set(year, month, 1);
-        System.out.println(calendar.get(Calendar.YEAR) +" " +calendar.get(Calendar.MONTH) +" " +calendar.get(Calendar.DAY_OF_MONTH) );
-        return calendar;
-    }
-
-
-
-
-
+    ArrayList<WeekDay> list = new ArrayList<WeekDay>();
 }

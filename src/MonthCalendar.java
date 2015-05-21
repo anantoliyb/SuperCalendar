@@ -1,20 +1,21 @@
+import java.util.Calendar;
 import java.util.Date;
 
 
 public class MonthCalendar {
 
-    private Date firstDaeOfMonth;
+    private Calendar firstDaeOfMonth;
 
-    MonthCalendar(Date firstDaeOfMonth){
+    MonthCalendar(Calendar firstDaeOfMonth){
         this.firstDaeOfMonth = firstDaeOfMonth;
 
     }
 
-    public Date getFirstDaeOfMonth() {
+    public Calendar getFirstDaeOfMonth() {
         return firstDaeOfMonth;
     }
 
-    public void setFirstDaeOfMonth(Date firstDaeOfMonth) {
+    public void setFirstDaeOfMonth(Calendar firstDaeOfMonth) {
         this.firstDaeOfMonth = firstDaeOfMonth;
     }
 }
